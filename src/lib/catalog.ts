@@ -118,7 +118,7 @@ export const APP_CATALOG: Record<string, Category> = {
       }
     ]
   },
-  'Browser': {
+  'Web': {
     description: 'Fast and secure web browsing experience',
     apps: [
       {
