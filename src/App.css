@@ -1,24 +1,3 @@
-:root {
-  --aurua-bg: #f6f6f7;
-  --aurua-surface: #ffffff;
-  --aurua-surface-2: #f9f9fb;
-  --aurua-border: #e3e3e3;
-  --aurua-border-hover: #c9c9c9;
-  --aurua-text: #303030;
-  --aurua-text-muted: #6d7175;
-  --aurua-text-subdued: #9ba0a5;
-
-  --aurua-sidebar-bg: #1a1a2e;
-  --aurua-sidebar-border: rgba(255, 255, 255, 0.08);
-  --aurua-sidebar-text: rgba(255, 255, 255, 0.9);
-  --aurua-sidebar-text-muted: rgba(255, 255, 255, 0.5);
-  --aurua-sidebar-active: rgba(255, 255, 255, 0.1);
-  --aurua-sidebar-hover: rgba(255, 255, 255, 0.06);
-
-  --aurua-accent: #5c6ac4;
-  --aurua-accent-hover: #4959bd;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,8 +6,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: var(--aurua-bg);
-  color: var(--aurua-text);
+  background: #f6f6f7;
+  color: #303030;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,78 +17,10 @@ body {
   overflow: hidden;
 }
 
-.dock-sidebar {
-  width: 260px;
-  background: var(--aurua-sidebar-bg);
-  border-right: 1px solid var(--aurua-sidebar-border);
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-
-.dock-logo {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--aurua-sidebar-text);
-  font-weight: 600;
-  font-size: 16px;
-  border-bottom: 1px solid var(--aurua-sidebar-border);
-}
-
-.dock-logo-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #5c6ac4 0%, #4959bd 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-}
-
-.dock-nav {
+.dock-main {
   flex: 1;
-  padding: 12px;
   overflow-y: auto;
-}
-
-.dock-nav-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border: none;
-  background: transparent;
-  color: var(--aurua-sidebar-text-muted);
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  text-align: left;
-}
-
-.dock-nav-item:hover {
-  background: var(--aurua-sidebar-hover);
-  color: var(--aurua-sidebar-text);
-}
-
-.dock-nav-item.active {
-  background: var(--aurua-sidebar-active);
-  color: var(--aurua-sidebar-text);
-}
-
-.dock-nav-icon {
-  font-size: 18px;
-}
-
-.dock-sidebar-footer {
-  border-top: 1px solid var(--aurua-sidebar-border);
-  padding: 16px;
+  background: #f6f6f7;
 }
 
 .dock-main {
