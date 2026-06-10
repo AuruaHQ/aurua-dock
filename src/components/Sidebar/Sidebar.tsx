@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Logo } from '../Logo/Logo';
 import './Sidebar.css';
 
 interface SidebarProps {
@@ -9,9 +10,7 @@ interface SidebarProps {
 export function Sidebar({ view, onViewChange }: SidebarProps) {
   return (
     <aside className="sidebar">
-      <div className="sidebar-logo">
-        <img src="/aurua.png" alt="Aurua" />
-      </div>
+      <Logo />
       
       <nav className="sidebar-nav">
         <button
