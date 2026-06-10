@@ -11,11 +11,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* macOS traffic lights area */
+body {
+  -webkit-app-region: drag;
+}
+
 .dock-app {
   display: flex;
   height: 100vh;
   overflow: hidden;
   background: #020203;
+  -webkit-app-region: no-drag;
+  padding-top: 28px;
 }
 
 .dock-main {
