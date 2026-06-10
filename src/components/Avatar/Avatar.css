@@ -1,13 +1,13 @@
 .avatar-container {
   position: fixed;
-  bottom: 8px;
-  right: 8px;
+  bottom: 5px;
+  right: 5px;
   z-index: 100;
 }
 
 .avatar-circle {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: linear-gradient(135deg, #5c6ac4 0%, #4959bd 100%);
   display: flex;
@@ -25,7 +25,7 @@
 
 .avatar-initial {
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
 }
