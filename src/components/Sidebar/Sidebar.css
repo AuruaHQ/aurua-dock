@@ -30,19 +30,21 @@
   transition: all 0.2s ease;
   text-align: left;
   margin-bottom: 8px;
+  position: relative;
 }
 
 .sidebar-nav-item:hover {
   background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.9);
-  transform: translateX(2px);
 }
 
 .sidebar-nav-item.active {
-  background: rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 1);
+  background: #ecf3f8;
+  color: #1a1a1a;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 16px 0 0 16px;
+  margin-right: -12px;
+  padding-right: 28px;
 }
 8
 .sidebar-nav-icon {
