@@ -43,8 +43,8 @@
   color: #1a1a1a;
   font-weight: 500;
   border-radius: 16px 0 0 16px;
-  margin-right: -12px;
-  padding-right: 28px;
+  margin-right: -24px;
+  padding-right: 40px;
 }
 
 .sidebar-nav-item.active::before {
