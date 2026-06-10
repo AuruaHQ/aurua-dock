@@ -8,32 +8,6 @@ export interface App {
 }
 
 export const APP_CATALOG: Record<string, App[]> = {
-  'AuruaHQ': [
-    {
-      id: 'aurua-platform',
-      name: 'Aurua Platform',
-      description: 'Voice, video, messaging, and collaboration',
-      icon: '💬',
-      color: 'linear-gradient(135deg, #5865F2 0%, #4752C4 100%)',
-      org: 'AuruaHQ'
-    },
-    {
-      id: 'aurua-admin',
-      name: 'Aurua Admin',
-      description: 'Internal super-admin panel',
-      icon: '🔐',
-      color: 'linear-gradient(135deg, #d72c0d 0%, #a82200 100%)',
-      org: 'AuruaHQ'
-    },
-    {
-      id: 'aurua-workforce',
-      name: 'Aurua Workforce',
-      description: 'Unified workforce management tools',
-      icon: '👥',
-      color: 'linear-gradient(135deg, #5c6ac4 0%, #4959bd 100%)',
-      org: 'AuruaHQ'
-    }
-  ],
   'AuruaCloud': [
     {
       id: 'aurua-cloud-console',
