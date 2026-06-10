@@ -6,7 +6,7 @@
 
 .catalog-section {
   margin-bottom: 48px;
-  padding: 0 40px;
+  padding: 0;
 }
 
 .catalog-org-title {
@@ -23,9 +23,9 @@
 }
 
 .app-card {
-  background: var(--aurua-surface);
-  border: 1px solid var(--aurua-border);
-  border-radius: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 16px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -34,8 +34,9 @@
 }
 
 .app-card:hover {
-  border-color: var(--aurua-border-hover);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .app-icon {
