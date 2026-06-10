@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { TitleBar } from './components/TitleBar/TitleBar';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { AppCatalog } from './components/AppCatalog/AppCatalog';
 import { InstalledApps } from './components/InstalledApps/InstalledApps';
@@ -20,13 +21,16 @@ export default function App() {
   }
 
   return (
-    <div className="dock-app">
-      <Sidebar view={view} onViewChange={setView} />
+    <>
+      <TitleBar />
+      <div className="dock-app">
+        <Sidebar view={view} onViewChange={setView} />
 
-      <main className="dock-main">
-        {view === 'installed' && <InstalledApps apps={installedApps} onRefresh={loadInstalledApps} />}
-        {view === 'catalog' && <AppCatalog onInstall={loadInstalledApps} />}
-      </main>
-    </div>
+        <main className="dock-main">
+          {view === 'installed' && <InstalledApps apps={installedApps} onRefresh={loadInstalledApps} />}
+          {view === 'catalog' && <AppCatalog onInstall={loadInstalledApps} />}
+        </main>
+      </div>
+    </>
   );
 }

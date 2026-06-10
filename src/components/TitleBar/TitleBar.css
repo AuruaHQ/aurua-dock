@@ -1,0 +1,10 @@
+.titlebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  -webkit-app-region: drag;
+  z-index: 100;
+  pointer-events: none;
+}

@@ -22,7 +22,6 @@ body {
   overflow: hidden;
   background: #020203;
   -webkit-app-region: no-drag;
-  padding-top: 28px;
 }
 
 .dock-main {
