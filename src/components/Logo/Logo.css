@@ -1,5 +1,5 @@
 .logo {
-  padding: 4px;
+  padding: 2px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -9,5 +9,5 @@
   width: auto;
   height: 150px;
   object-fit: contain;
-  margin-left: -120px;
+  margin-left: -110px;
 }
