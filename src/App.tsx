@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 import { TitleBar } from './components/TitleBar/TitleBar';
 import { Sidebar } from './components/Sidebar/Sidebar';
-import { AppCatalog } from './components/AppCatalog/AppCatalog';
+import { Dashboard } from './pages/Dashboard/Dashboard';
+import { AppDirectory } from './pages/AppDirectory/AppDirectory';
 import { Avatar } from './components/Avatar/Avatar';
 import './App.css';
 
+type View = 'dashboard' | 'app-directory';
+
 export default function App() {
+  const [currentView, setCurrentView] = useState<View>('dashboard');
   const [installedApps, setInstalledApps] = useState<string[]>([]);
 
   useEffect(() => {
@@ -23,10 +27,11 @@ export default function App() {
     <>
       <TitleBar />
       <div className="dock-app">
-        <Sidebar />
+        <Sidebar currentView={currentView} onViewChange={setCurrentView} />
 
         <main className="dock-main">
-          <AppCatalog onInstall={loadInstalledApps} />
+          {currentView === 'dashboard' && <Dashboard />}
+          {currentView === 'app-directory' && <AppDirectory onInstall={loadInstalledApps} />}
         </main>
       </div>
       <Avatar />

@@ -1,17 +1,28 @@
 import { Logo } from '../Logo/Logo';
 import './Sidebar.css';
 
-export function Sidebar() {
+interface SidebarProps {
+  currentView: 'dashboard' | 'app-directory';
+  onViewChange: (view: 'dashboard' | 'app-directory') => void;
+}
+
+export function Sidebar({ currentView, onViewChange }: SidebarProps) {
   return (
     <aside className="sidebar">
       <Logo />
       
       <nav className="sidebar-nav">
-        <button className="sidebar-nav-item active">
+        <button 
+          className={`sidebar-nav-item ${currentView === 'dashboard' ? 'active' : ''}`}
+          onClick={() => onViewChange('dashboard')}
+        >
           <span className="sidebar-nav-icon">📊</span>
           <span>Dashboard</span>
         </button>
-        <button className="sidebar-nav-item">
+        <button 
+          className={`sidebar-nav-item ${currentView === 'app-directory' ? 'active' : ''}`}
+          onClick={() => onViewChange('app-directory')}
+        >
           <span className="sidebar-nav-icon">📁</span>
           <span>App Directory</span>
         </button>
