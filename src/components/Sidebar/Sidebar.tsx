@@ -9,14 +9,6 @@ interface SidebarProps {
 export function Sidebar({ view, onViewChange }: SidebarProps) {
   return (
     <aside className="sidebar">
-      <div className="sidebar-header">
-        <div className="sidebar-logo-icon">A</div>
-        <div className="sidebar-logo-text">
-          <div className="sidebar-logo-title">Aurua</div>
-          <div className="sidebar-logo-subtitle">Dock</div>
-        </div>
-      </div>
-
       <nav className="sidebar-nav">
         <button
           className={`sidebar-nav-item ${view === 'installed' ? 'active' : ''}`}
