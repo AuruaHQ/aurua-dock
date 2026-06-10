@@ -51,24 +51,24 @@
   content: '';
   position: absolute;
   right: 0;
-  top: -20px;
-  width: 20px;
-  height: 20px;
+  top: -30px;
+  width: 30px;
+  height: 30px;
   background: #020203;
-  border-bottom-right-radius: 10px;
-  box-shadow: 5px 5px 0 5px #ecf3f8;
+  border-bottom-right-radius: 8px;
+  box-shadow: 8px 8px 0 8px #ecf3f8;
 }
 
 .sidebar-nav-item.active::after {
   content: '';
   position: absolute;
   right: 0;
-  bottom: -20px;
-  width: 20px;
-  height: 20px;
+  bottom: -30px;
+  width: 30px;
+  height: 30px;
   background: #020203;
-  border-top-right-radius: 10px;
-  box-shadow: 5px -5px 0 5px #ecf3f8;
+  border-top-right-radius: 8px;
+  box-shadow: 8px -8px 0 8px #ecf3f8;
 }
 8
 .sidebar-nav-icon {
