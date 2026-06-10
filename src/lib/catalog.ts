@@ -13,6 +13,19 @@ export interface Category {
 }
 
 export const APP_CATALOG: Record<string, Category> = {
+  'Social Media': {
+    description: 'Connect and share with your community',
+    apps: [
+      {
+        id: 'aurua-social',
+        name: 'Aurua Social',
+        description: 'Social networking and community platform',
+        icon: '🌐',
+        color: 'linear-gradient(135deg, #1DA1F2 0%, #1a8cd8 100%)',
+        org: 'AuruaSocial'
+      }
+    ]
+  },
   'Developer Tools': {
     description: 'Build, deploy, and manage your development workflow',
     apps: [
@@ -102,19 +115,6 @@ export const APP_CATALOG: Record<string, Category> = {
         icon: '📹',
         color: 'linear-gradient(135deg, #9146ff 0%, #772ce8 100%)',
         org: 'AuruaMedia'
-      }
-    ]
-  },
-  'Social Media': {
-    description: 'Connect and share with your community',
-    apps: [
-      {
-        id: 'aurua-social',
-        name: 'Aurua Social',
-        description: 'Social networking and community platform',
-        icon: '🌐',
-        color: 'linear-gradient(135deg, #1DA1F2 0%, #1a8cd8 100%)',
-        org: 'AuruaSocial'
       }
     ]
   },
