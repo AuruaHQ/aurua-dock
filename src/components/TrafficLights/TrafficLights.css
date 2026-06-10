@@ -1,0 +1,33 @@
+.traffic-lights {
+  position: fixed;
+  top: 13px;
+  left: 13px;
+  display: flex;
+  gap: 8px;
+  z-index: 200;
+  pointer-events: auto;
+}
+
+.traffic-light {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.traffic-light:hover {
+  opacity: 0.8;
+}
+
+.traffic-light-close {
+  background: #ff5f57;
+}
+
+.traffic-light-minimize {
+  background: #febc2e;
+}
+
+.traffic-light-maximize {
+  background: #28c840;
+}
