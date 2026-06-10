@@ -18,11 +18,14 @@ export function AppCatalog({ onInstall }: AppCatalogProps) {
     <div className="app-catalog">
       <Header />
 
-      {Object.entries(APP_CATALOG).map(([org, apps]) => (
-        <section key={org} className="catalog-section">
-          <h2 className="catalog-org-title">{org}</h2>
+      {Object.entries(APP_CATALOG).map(([categoryName, category]) => (
+        <section key={categoryName} className="catalog-section">
+          <div className="catalog-category-header">
+            <h2 className="catalog-org-title">{categoryName}</h2>
+            <p className="catalog-category-description">{category.description}</p>
+          </div>
           <div className="catalog-grid">
-            {apps.map((app) => (
+            {category.apps.map((app) => (
               <div key={app.id} className="app-card">
                 <div className="app-icon" style={{ background: app.color }}>
                   {app.icon}

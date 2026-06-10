@@ -9,11 +9,21 @@
   padding: 0;
 }
 
+.catalog-category-header {
+  margin-bottom: 24px;
+}
+
 .catalog-org-title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   color: var(--aurua-text);
+}
+
+.catalog-category-description {
+  font-size: 14px;
+  color: var(--aurua-text-muted);
+  margin: 0;
 }
 
 .catalog-grid {
