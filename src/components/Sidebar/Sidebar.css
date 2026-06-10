@@ -47,3 +47,33 @@
   font-size: 16px;
   line-height: 1;
 }
+
+.sidebar-download-manager {
+  padding: 12px;
+  margin-top: auto;
+}
+
+.download-manager-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.download-manager-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.download-manager-icon {
+  font-size: 16px;
+  line-height: 1;
+}
