@@ -1,0 +1,143 @@
+export interface App {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  color: string;
+  org: string;
+}
+
+export const APP_CATALOG: Record<string, App[]> = {
+  'AuruaHQ': [
+    {
+      id: 'aurua-platform',
+      name: 'Aurua Platform',
+      description: 'Voice, video, messaging, and collaboration',
+      icon: '💬',
+      color: 'linear-gradient(135deg, #5865F2 0%, #4752C4 100%)',
+      org: 'AuruaHQ'
+    },
+    {
+      id: 'aurua-admin',
+      name: 'Aurua Admin',
+      description: 'Internal super-admin panel',
+      icon: '🔐',
+      color: 'linear-gradient(135deg, #d72c0d 0%, #a82200 100%)',
+      org: 'AuruaHQ'
+    },
+    {
+      id: 'aurua-workforce',
+      name: 'Aurua Workforce',
+      description: 'Unified workforce management tools',
+      icon: '👥',
+      color: 'linear-gradient(135deg, #5c6ac4 0%, #4959bd 100%)',
+      org: 'AuruaHQ'
+    }
+  ],
+  'AuruaCloud': [
+    {
+      id: 'aurua-cloud-console',
+      name: 'Aurua Cloud Console',
+      description: 'Manage your cloud infrastructure',
+      icon: '☁️',
+      color: 'linear-gradient(135deg, #4285f4 0%, #34a853 100%)',
+      org: 'AuruaCloud'
+    }
+  ],
+  'AuruaCore': [
+    {
+      id: 'aurua-core',
+      name: 'Aurua Core',
+      description: 'Git hosting, CI/CD, and code collaboration',
+      icon: '⚙️',
+      color: 'linear-gradient(135deg, #24292e 0%, #1b1f23 100%)',
+      org: 'AuruaCore'
+    }
+  ],
+  'AuruaStudio': [
+    {
+      id: 'aurua-studio',
+      name: 'Aurua Studio',
+      description: 'AI-native code editor and IDE',
+      icon: '💻',
+      color: 'linear-gradient(135deg, #007acc 0%, #005a9e 100%)',
+      org: 'AuruaStudio'
+    }
+  ],
+  'AuruaGameEngine': [
+    {
+      id: 'aurua-engine',
+      name: 'Aurua Engine Editor',
+      description: 'Game engine with Vulkan rendering',
+      icon: '🎮',
+      color: 'linear-gradient(135deg, #e91e63 0%, #c2185b 100%)',
+      org: 'AuruaGameEngine'
+    }
+  ],
+  'AuruaMedia': [
+    {
+      id: 'aurua-streaming',
+      name: 'Aurua Streaming Studio',
+      description: 'Live streaming and broadcasting tools',
+      icon: '📹',
+      color: 'linear-gradient(135deg, #9146ff 0%, #772ce8 100%)',
+      org: 'AuruaMedia'
+    }
+  ],
+  'AuruaSuites': [
+    {
+      id: 'aurua-office',
+      name: 'Aurua Office',
+      description: 'Writer, Sheets, and Slides productivity suite',
+      icon: '📄',
+      color: 'linear-gradient(135deg, #ff6d00 0%, #f57c00 100%)',
+      org: 'AuruaSuites'
+    },
+    {
+      id: 'aurua-workspace',
+      name: 'Aurua Workspace',
+      description: 'Notion-style collaborative workspace',
+      icon: '🗂️',
+      color: 'linear-gradient(135deg, #000000 0%, #383838 100%)',
+      org: 'AuruaSuites'
+    },
+    {
+      id: 'aurua-drive',
+      name: 'Aurua Drive',
+      description: 'File and folder management with cloud sync',
+      icon: '💾',
+      color: 'linear-gradient(135deg, #0f9d58 0%, #0b8043 100%)',
+      org: 'AuruaSuites'
+    }
+  ],
+  'AuruaSocial': [
+    {
+      id: 'aurua-social',
+      name: 'Aurua Social',
+      description: 'Social networking and community platform',
+      icon: '🌐',
+      color: 'linear-gradient(135deg, #1DA1F2 0%, #1a8cd8 100%)',
+      org: 'AuruaSocial'
+    }
+  ],
+  'AuruaGames': [
+    {
+      id: 'aurua-games-launcher',
+      name: 'Aurua Games',
+      description: 'Game store and launcher with cloud saves',
+      icon: '🎯',
+      color: 'linear-gradient(135deg, #171a21 0%, #1b2838 100%)',
+      org: 'AuruaGames'
+    }
+  ],
+  'AuruaBrowser': [
+    {
+      id: 'aurua-browser',
+      name: 'Aurua Browser',
+      description: 'Fast, secure web browser',
+      icon: '🌍',
+      color: 'linear-gradient(135deg, #fb8c00 0%, #f57c00 100%)',
+      org: 'AuruaBrowser'
+    }
+  ]
+};

@@ -1,0 +1,124 @@
+.installed-apps {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.installed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.installed-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--aurua-text);
+}
+
+.refresh-btn {
+  padding: 10px 20px;
+  background: var(--aurua-surface);
+  border: 1px solid var(--aurua-border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--aurua-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.refresh-btn:hover {
+  border-color: var(--aurua-border-hover);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.empty-state h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--aurua-text);
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: var(--aurua-text-muted);
+}
+
+.installed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.installed-card {
+  background: var(--aurua-surface);
+  border: 1px solid var(--aurua-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease;
+}
+
+.installed-card:hover {
+  border-color: var(--aurua-border-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.installed-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #5c6ac4 0%, #4959bd 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.installed-info {
+  flex: 1;
+}
+
+.installed-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--aurua-text);
+}
+
+.installed-info p {
+  font-size: 13px;
+  color: var(--aurua-text-muted);
+}
+
+.launch-btn {
+  padding: 8px 16px;
+  background: var(--aurua-accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.launch-btn:hover {
+  background: var(--aurua-accent-hover);
+}

@@ -1,0 +1,99 @@
+.app-catalog {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.catalog-header {
+  margin-bottom: 48px;
+}
+
+.catalog-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--aurua-text);
+}
+
+.catalog-header p {
+  font-size: 16px;
+  color: var(--aurua-text-muted);
+}
+
+.catalog-section {
+  margin-bottom: 48px;
+}
+
+.catalog-org-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--aurua-text);
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.app-card {
+  background: var(--aurua-surface);
+  border: 1px solid var(--aurua-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.2s ease;
+}
+
+.app-card:hover {
+  border-color: var(--aurua-border-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.app-info {
+  flex: 1;
+}
+
+.app-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--aurua-text);
+}
+
+.app-description {
+  font-size: 14px;
+  color: var(--aurua-text-muted);
+  line-height: 1.5;
+}
+
+.app-install-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: var(--aurua-accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.app-install-btn:hover {
+  background: var(--aurua-accent-hover);
+}
