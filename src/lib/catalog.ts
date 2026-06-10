@@ -8,7 +8,7 @@ export interface App {
 }
 
 export const APP_CATALOG: Record<string, App[]> = {
-  'AuruaCloud': [
+  'Developer Tools': [
     {
       id: 'aurua-cloud-console',
       name: 'Aurua Cloud Console',
@@ -16,9 +16,7 @@ export const APP_CATALOG: Record<string, App[]> = {
       icon: '☁️',
       color: 'linear-gradient(135deg, #4285f4 0%, #34a853 100%)',
       org: 'AuruaCloud'
-    }
-  ],
-  'AuruaCore': [
+    },
     {
       id: 'aurua-core',
       name: 'Aurua Core',
@@ -26,9 +24,7 @@ export const APP_CATALOG: Record<string, App[]> = {
       icon: '⚙️',
       color: 'linear-gradient(135deg, #24292e 0%, #1b1f23 100%)',
       org: 'AuruaCore'
-    }
-  ],
-  'AuruaStudio': [
+    },
     {
       id: 'aurua-studio',
       name: 'Aurua Studio',
@@ -38,27 +34,7 @@ export const APP_CATALOG: Record<string, App[]> = {
       org: 'AuruaStudio'
     }
   ],
-  'AuruaGameEngine': [
-    {
-      id: 'aurua-engine',
-      name: 'Aurua Engine Editor',
-      description: 'Game engine with Vulkan rendering',
-      icon: '🎮',
-      color: 'linear-gradient(135deg, #e91e63 0%, #c2185b 100%)',
-      org: 'AuruaGameEngine'
-    }
-  ],
-  'AuruaMedia': [
-    {
-      id: 'aurua-streaming',
-      name: 'Aurua Streaming Studio',
-      description: 'Live streaming and broadcasting tools',
-      icon: '📹',
-      color: 'linear-gradient(135deg, #9146ff 0%, #772ce8 100%)',
-      org: 'AuruaMedia'
-    }
-  ],
-  'AuruaSuites': [
+  'Productivity': [
     {
       id: 'aurua-office',
       name: 'Aurua Office',
@@ -84,17 +60,15 @@ export const APP_CATALOG: Record<string, App[]> = {
       org: 'AuruaSuites'
     }
   ],
-  'AuruaSocial': [
+  'Gaming': [
     {
-      id: 'aurua-social',
-      name: 'Aurua Social',
-      description: 'Social networking and community platform',
-      icon: '🌐',
-      color: 'linear-gradient(135deg, #1DA1F2 0%, #1a8cd8 100%)',
-      org: 'AuruaSocial'
-    }
-  ],
-  'AuruaGames': [
+      id: 'aurua-engine',
+      name: 'Aurua Engine Editor',
+      description: 'Game engine with Vulkan rendering',
+      icon: '🎮',
+      color: 'linear-gradient(135deg, #e91e63 0%, #c2185b 100%)',
+      org: 'AuruaGameEngine'
+    },
     {
       id: 'aurua-games-launcher',
       name: 'Aurua Games',
@@ -104,7 +78,25 @@ export const APP_CATALOG: Record<string, App[]> = {
       org: 'AuruaGames'
     }
   ],
-  'AuruaBrowser': [
+  'Media & Creative': [
+    {
+      id: 'aurua-streaming',
+      name: 'Aurua Streaming Studio',
+      description: 'Live streaming and broadcasting tools',
+      icon: '📹',
+      color: 'linear-gradient(135deg, #9146ff 0%, #772ce8 100%)',
+      org: 'AuruaMedia'
+    }
+  ],
+  'Internet': [
+    {
+      id: 'aurua-social',
+      name: 'Aurua Social',
+      description: 'Social networking and community platform',
+      icon: '🌐',
+      color: 'linear-gradient(135deg, #1DA1F2 0%, #1a8cd8 100%)',
+      org: 'AuruaSocial'
+    },
     {
       id: 'aurua-browser',
       name: 'Aurua Browser',
