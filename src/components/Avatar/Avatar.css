@@ -1,7 +1,7 @@
 .avatar-container {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 8px;
+  right: 8px;
   z-index: 100;
 }
 
