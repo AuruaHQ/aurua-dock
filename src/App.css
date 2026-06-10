@@ -22,9 +22,3 @@ body {
   overflow-y: auto;
   background: #f6f6f7;
 }
-
-.dock-main {
-  flex: 1;
-  overflow-y: auto;
-  background: var(--aurua-bg);
-}
