@@ -23,7 +23,7 @@ function createWindow() {
 
   if (isDev) {
     mainWindow.loadURL('http://localhost:5173');
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools(); // Uncomment to debug
   } else {
     mainWindow.loadFile(path.join(__dirname, '../dist-vite/index.html'));
   }
