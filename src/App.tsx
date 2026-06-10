@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { TitleBar } from './components/TitleBar/TitleBar';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { AppCatalog } from './components/AppCatalog/AppCatalog';
+import { Avatar } from './components/Avatar/Avatar';
 import './App.css';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <AppCatalog onInstall={loadInstalledApps} />
         </main>
       </div>
+      <Avatar />
     </>
   );
 }
