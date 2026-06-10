@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Sidebar } from './components/Sidebar/Sidebar';
-import { AppCatalog } from './components/AppCatalog';
-import { InstalledApps } from './components/InstalledApps';
+import { AppCatalog } from './components/AppCatalog/AppCatalog';
+import { InstalledApps } from './components/InstalledApps/InstalledApps';
 import './App.css';
 
 export default function App() {

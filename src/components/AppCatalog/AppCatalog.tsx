@@ -1,4 +1,4 @@
-import { APP_CATALOG } from '../lib/catalog';
+import { APP_CATALOG } from '../../lib/catalog';
 import './AppCatalog.css';
 
 interface AppCatalogProps {
