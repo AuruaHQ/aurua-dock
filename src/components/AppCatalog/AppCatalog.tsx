@@ -27,6 +27,12 @@ export function AppCatalog({ onInstall }: AppCatalogProps) {
           <div className="catalog-grid">
             {category.apps.map((app) => (
               <div key={app.id} className="app-card">
+                <button
+                  className="app-install-btn"
+                  onClick={() => handleInstall(app.id)}
+                >
+                  Install
+                </button>
                 <div className="app-icon" style={{ background: app.color }}>
                   {app.icon}
                 </div>
@@ -34,12 +40,6 @@ export function AppCatalog({ onInstall }: AppCatalogProps) {
                   <h3 className="app-name">{app.name}</h3>
                   <p className="app-description">{app.description}</p>
                 </div>
-                <button
-                  className="app-install-btn"
-                  onClick={() => handleInstall(app.id)}
-                >
-                  Install
-                </button>
               </div>
             ))}
           </div>

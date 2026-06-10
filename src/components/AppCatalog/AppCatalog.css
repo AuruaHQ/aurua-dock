@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
   transition: all 0.2s ease;
 }
 
@@ -78,19 +79,22 @@
 }
 
 .app-install-btn {
-  width: 100%;
-  padding: 10px 16px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 6px 16px;
   background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
   color: white;
   border: none;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+  z-index: 10;
 }
 
 .app-install-btn:hover {
   background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
