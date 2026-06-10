@@ -88,7 +88,7 @@ export const APP_CATALOG: Record<string, App[]> = {
       org: 'AuruaMedia'
     }
   ],
-  'Internet': [
+  'Social Media': [
     {
       id: 'aurua-social',
       name: 'Aurua Social',
