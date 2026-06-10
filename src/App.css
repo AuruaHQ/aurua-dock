@@ -28,10 +28,34 @@ body {
   flex: 1;
   overflow-y: auto;
   background: #ecf3f8;
-  border-radius: 24px;
+  border-radius: 24px 0 0 24px;
   position: relative;
   scroll-behavior: smooth;
-  margin: 40px 66px 3px 12px;
+  margin: 40px 20px 3px 12px;
+}
+
+.dock-main::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -30px;
+  width: 30px;
+  height: 30px;
+  background: #020203;
+  border-bottom-left-radius: 4px;
+  box-shadow: -8px 8px 0 8px #ecf3f8;
+}
+
+.dock-main::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -27px;
+  width: 30px;
+  height: 30px;
+  background: #020203;
+  border-top-left-radius: 4px;
+  box-shadow: -8px -8px 0 8px #ecf3f8;
 }
 
 /* Hide scrollbar */
