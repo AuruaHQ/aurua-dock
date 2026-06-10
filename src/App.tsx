@@ -2,11 +2,9 @@ import { useState, useEffect } from 'react';
 import { TitleBar } from './components/TitleBar/TitleBar';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { AppCatalog } from './components/AppCatalog/AppCatalog';
-import { InstalledApps } from './components/InstalledApps/InstalledApps';
 import './App.css';
 
 export default function App() {
-  const [view, setView] = useState<'installed' | 'catalog'>('installed');
   const [installedApps, setInstalledApps] = useState<string[]>([]);
 
   useEffect(() => {
@@ -24,11 +22,10 @@ export default function App() {
     <>
       <TitleBar />
       <div className="dock-app">
-        <Sidebar view={view} onViewChange={setView} />
+        <Sidebar />
 
         <main className="dock-main">
-          {view === 'installed' && <InstalledApps apps={installedApps} onRefresh={loadInstalledApps} />}
-          {view === 'catalog' && <AppCatalog onInstall={loadInstalledApps} />}
+          <AppCatalog onInstall={loadInstalledApps} />
         </main>
       </div>
     </>
