@@ -1,12 +1,13 @@
 .logo {
-  padding: 20px;
+  padding: 12px 12px 12px 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .logo-image {
   width: auto;
   height: 150px;
   object-fit: contain;
+  margin-left: -8px;
 }
