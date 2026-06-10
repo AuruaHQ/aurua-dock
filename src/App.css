@@ -21,7 +21,17 @@ body {
 .dock-main {
   flex: 1;
   overflow-y: auto;
-  background: #f6f6f7;
+  background: #ecf3f8;
   border-radius: 24px 0 0 24px;
   position: relative;
+}
+
+/* Hide scrollbar */
+.dock-main::-webkit-scrollbar {
+  display: none;
+}
+
+.dock-main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

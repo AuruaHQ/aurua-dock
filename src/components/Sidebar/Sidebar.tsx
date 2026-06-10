@@ -9,6 +9,10 @@ interface SidebarProps {
 export function Sidebar({ view, onViewChange }: SidebarProps) {
   return (
     <aside className="sidebar">
+      <div className="sidebar-logo">
+        <img src="/aurua.png" alt="Aurua" />
+      </div>
+      
       <nav className="sidebar-nav">
         <button
           className={`sidebar-nav-item ${view === 'installed' ? 'active' : ''}`}
