@@ -1,4 +1,5 @@
 import { APP_CATALOG } from '../../lib/catalog';
+import { Header } from '../Header/Header';
 import './AppCatalog.css';
 
 interface AppCatalogProps {
@@ -15,10 +16,7 @@ export function AppCatalog({ onInstall }: AppCatalogProps) {
 
   return (
     <div className="app-catalog">
-      <header className="catalog-header">
-        <h1>Discover Aurua Apps</h1>
-        <p>Browse and install apps across the entire Aurua ecosystem</p>
-      </header>
+      <Header />
 
       {Object.entries(APP_CATALOG).map(([org, apps]) => (
         <section key={org} className="catalog-section">
