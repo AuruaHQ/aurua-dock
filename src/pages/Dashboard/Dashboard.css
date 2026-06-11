@@ -1,20 +1,56 @@
 .dashboard {
   padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .dashboard-header {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .dashboard-header h1 {
   font-size: 32px;
   font-weight: 600;
-  color: var(--aurua-text);
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
+  color: #1a1a1a;
 }
 
 .dashboard-header p {
   font-size: 16px;
-  color: var(--aurua-text-muted);
+  color: #666;
   margin: 0;
+}
+
+.dashboard-content {
+  min-height: 400px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.empty-state p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.empty-state span {
+  font-size: 15px;
+  color: #bbb;
+}
+
+.installed-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  contain: layout style;
 }

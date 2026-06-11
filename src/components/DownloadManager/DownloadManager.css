@@ -1,0 +1,23 @@
+.download-manager {
+  background: #ecf3f8;
+  border-radius: 40px;
+  padding: 35px 20px 35px 20px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  color: #303030;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.download-manager:hover {
+  opacity: 0.9;
+}
+
+.download-manager:active {
+  opacity: 0.8;
+}

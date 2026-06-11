@@ -1,0 +1,10 @@
+.right-curve {
+  content: '';
+  position: fixed;
+  right: 0;
+  bottom: 90px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at top left, transparent 80px, #5c6ac4 81px);
+  z-index: 2;
+}

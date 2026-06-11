@@ -1,5 +1,5 @@
 .sidebar {
-  width: 260px;
+  width: 290px;
   background: #020203;
   display: flex;
   flex-direction: column;
@@ -9,99 +9,12 @@
 }
 
 .sidebar-nav {
-  flex: 1;
-  padding: 90px 12px 16px 12px;
+  padding: 80px 24px 16px 16px;
   overflow-y: auto;
 }
 
-.sidebar-nav-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  border: none;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 16px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: left;
-  margin-bottom: 8px;
-  position: relative;
-}
-
-.sidebar-nav-item:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.sidebar-nav-item.active {
-  background: #ecf3f8;
-  color: #1a1a1a;
-  font-weight: 500;
-  border-radius: 999px 0 0 999px;
-  margin-right: -52px;
-  padding-right: 68px;
-}
-
-.sidebar-nav-item.active::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: -30px;
-  width: 30px;
-  height: 30px;
-  background: #020203;
-  border-bottom-right-radius: 4px;
-  box-shadow: 8px 8px 0 8px #ecf3f8;
-}
-
-.sidebar-nav-item.active::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -30px;
-  width: 30px;
-  height: 30px;
-  background: #020203;
-  border-top-right-radius: 4px;
-  box-shadow: 8px -8px 0 8px #ecf3f8;
-}
-8
-.sidebar-nav-icon {
-  font-size: 16px;
-  line-height: 1;
-}
-
 .sidebar-download-manager {
-  padding: 12px;
+  padding: 24px 24px 10px 16px;
   margin-top: auto;
-}
-
-.download-manager-box {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.download-manager-box:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.15);
-}
-
-.download-manager-icon {
-  font-size: 16px;
-  line-height: 1;
+  margin-bottom: 0;
 }

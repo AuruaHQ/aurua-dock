@@ -1,38 +1,38 @@
 import { Logo } from '../Logo/Logo';
 import './Sidebar.css';
+import { ActiveNavItem } from './ActiveNavItem/ActiveNavItem';
+import { InactiveNavItem } from './InactiveNavItem/InactiveNavItem';
+import { SidebarNavContainer } from '../SidebarNavContainer/SidebarNavContainer';
+import { DownloadManager } from '../DownloadManager/DownloadManager';
 
 interface SidebarProps {
-  currentView: 'dashboard' | 'app-directory';
-  onViewChange: (view: 'dashboard' | 'app-directory') => void;
+  activeView: string;
+  onViewChange: (view: string) => void;
 }
 
-export function Sidebar({ currentView, onViewChange }: SidebarProps) {
+export function Sidebar({ activeView, onViewChange }: SidebarProps) {
   return (
     <aside className="sidebar">
       <Logo />
       
       <nav className="sidebar-nav">
-        <button 
-          className={`sidebar-nav-item ${currentView === 'dashboard' ? 'active' : ''}`}
-          onClick={() => onViewChange('dashboard')}
-        >
-          <span className="sidebar-nav-icon">📊</span>
-          <span>Dashboard</span>
-        </button>
-        <button 
-          className={`sidebar-nav-item ${currentView === 'app-directory' ? 'active' : ''}`}
-          onClick={() => onViewChange('app-directory')}
-        >
-          <span className="sidebar-nav-icon">📁</span>
-          <span>App Directory</span>
-        </button>
+        <SidebarNavContainer>
+          {activeView === 'dashboard' ? (
+            <ActiveNavItem label="Dashboard" />
+          ) : (
+            <InactiveNavItem label="Dashboard" onClick={() => onViewChange('dashboard')} />
+          )}
+          
+          {activeView === 'directory' ? (
+            <ActiveNavItem label="App Directory" />
+          ) : (
+            <InactiveNavItem label="App Directory" onClick={() => onViewChange('directory')} />
+          )}
+        </SidebarNavContainer>
       </nav>
 
       <div className="sidebar-download-manager">
-        <div className="download-manager-box">
-          <span className="download-manager-icon">⬇️</span>
-          <span>Download Manager</span>
-        </div>
+        <DownloadManager />
       </div>
     </aside>
   );

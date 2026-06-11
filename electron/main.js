@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, globalShortcut } = require('electron');
 const path = require('path');
 const { autoUpdater } = require('electron-updater');
 
@@ -36,12 +36,22 @@ function createWindow() {
 app.whenReady().then(() => {
   createWindow();
 
+  // Register Ctrl+R / Cmd+R for refresh
+  globalShortcut.register('CommandOrControl+R', () => {
+    if (mainWindow) {
+      mainWindow.webContents.reload();
+    }
+  });
+
   // Check for updates
   if (!process.env.NODE_ENV === 'development') {
     autoUpdater.checkForUpdatesAndNotify();
   }
 
   app.on('activate', () => {
+  // Unregister all shortcuts
+  globalShortcut.unregisterAll();
+  
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
     }

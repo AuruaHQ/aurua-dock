@@ -1,0 +1,10 @@
+.bottom-curve {
+  content: '';
+  position: fixed;
+  right: 80px;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at top left, transparent 80px, #020203 81px);
+  z-index: 2;
+}

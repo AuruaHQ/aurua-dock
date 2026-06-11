@@ -1,0 +1,10 @@
+.sidebar-nav-container {
+  background: #ecf3f8;
+  border-radius: 40px;
+  padding: 58px 20px;
+  min-height: 550px;
+}
+
+.sidebar-nav-container > button:last-child {
+  margin-bottom: 0;
+}

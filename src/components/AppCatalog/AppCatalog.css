@@ -6,11 +6,14 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .catalog-section {
   margin-bottom: 48px;
   padding: 0;
+  contain: layout style paint;
 }
 
 .catalog-category-header {
@@ -36,6 +39,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
+  contain: layout style;
 }
 
 .app-card {
@@ -47,7 +51,12 @@
   flex-direction: column;
   gap: 16px;
   position: relative;
-  transition: all 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .app-card:hover {

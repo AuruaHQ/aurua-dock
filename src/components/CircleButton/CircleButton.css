@@ -1,0 +1,32 @@
+.circle-button-container {
+  position: fixed;
+  right: 13px;
+  bottom: 245px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #ecf3f8;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.circle-button:hover {
+  opacity: 0.9;
+}
+
+.circle-button:active {
+  opacity: 0.8;
+}
